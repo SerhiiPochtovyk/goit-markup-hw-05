@@ -65,7 +65,9 @@
         <div class="container content-wrap">
           <h1 class="caption">Effective Solutions for Your Business</h1>
 
-          <button type="button" class="btn-banner">Order Service</button>
+          <button class="modal-button-image" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -167,7 +169,7 @@
       <!-- Our Team -->
 
       <!-- section four -->
-      
+
       <section class="section-employee">
         <div class="container employee-cont">
           <h2 class="headline">Our Team</h2>
@@ -385,11 +387,11 @@
                 </svg>
               </a>
             </li>
-            
+
             <li class="item-customer">
               <a href="" class="icon-svg-customer">
                 <svg class="svg-fill-customer" width="104" height="56">
-                  <use href="./images/icons.svg#iconlogo-5"></use>
+                  <use href="./images/icons.svg#iconClient-5"></use>
                 </svg>
               </a>
             </li>
@@ -452,5 +454,17 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal-window">
+        <button type="button" class="modal-window-close-btn" data-modal-close>
+          <svg class="modal-window-close-btn-img" width="8" height="8">
+            <use href="./images/icons.svg#iconclose-black-18dp-2-1"></use>
+          </svg>
+        </button>
+        <button class="review-form-submit-btn" type="submit">Send</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
