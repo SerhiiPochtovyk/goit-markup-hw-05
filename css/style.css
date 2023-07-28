@@ -885,11 +885,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color:#2E2F42;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: #e7e9fc;
-  transition: background-color var(--transition-duration);
-  transition: background-color var(--transition-func);
-}
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  }
 
 .modal-window-close-btn:hover,
 .modal-window-close-btn:focus {
@@ -897,12 +897,9 @@ body {
   background-color: #404bbf;
 }
 
-.modal-window-close-btn-img:hover,
-.modal-window-close-btn-img:focus {
-  fill: #2e2f42;
-}
-
-.modal-window-close-btn-img {
+.modal-window-close-btn-img:hover {
+  fill: #ffffff;
   transition: fill var(--transition-duration);
   transition: fill var(--transition-func);
 }
+
