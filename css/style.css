@@ -248,8 +248,8 @@ body {
   padding-top: 24px;
   padding-bottom: 24px;
   color: var(--text-color);
-  transition: color var(--transition-duration);
-  transition: color var(--transition-func);
+  transition: text-color var(--transition-duration);
+  transition: text-color var(--transition-func);
 }
 
 .nav-link:hover {
@@ -510,6 +510,7 @@ body {
   display: flex;
   gap: 24px;
   fill: #4d5ae5;
+
 }
 
 .svg-fill-customer {
@@ -535,8 +536,8 @@ body {
   border: 1px solid #8e8f99;
   border-radius: 4px;
   color: #8e8f99;
-  border-color: var(--transition-duration);
-  border-color: var(--transition-func);
+  transition: border-color var(--transition-duration);
+  transition: border-color var(--transition-func);
 }
 
 .icon-svg-customer:hover,
@@ -849,8 +850,10 @@ body {
   width: 100%;
   height: 100%;
   background: var(--navyblue-modal, rgba(46, 47, 66, 0.4));
-  transition: opacity var(--transition-dur-and-func),
-    visibility var(--transition-dur-and-func);
+  transition: opacity var(--transition-duration);
+  transition: opacity var(--transition-func);
+  transition: visibility var(--transition-duration);
+  transition: visibility var(--transition-func);
 }
 
 .is-hidden {
@@ -870,11 +873,8 @@ body {
   background: var(--dairy, #fcfcfc);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-  transition: opacity var(--transition-duration); 
-  transition: opacity var(--transition-func);
-  transition: visibility var(--transition-duration);
-  transition: visibility var(--transition-func);
-  
+    transition: transform var(--transition-duration);
+    transition: transform var(--transition-func);
 }
 
 .modal-window:hover,
@@ -894,8 +894,9 @@ body {
   align-items: center;
   justify-content: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: border var(--transition-dur-and-func);
   background-color: #e7e9fc;
+  transition: background-color var(--transition-duration);
+  transition: background-color var(--transition-func);
 }
 
 .modal-window-close-btn:hover,
@@ -904,30 +905,12 @@ body {
   background-color: #404bbf;
 }
 
+.modal-window-close-btn-img:hover,
+.modal-window-close-btn-img:focus {
+  fill: #ffffff;
+} 
+
 .modal-window-close-btn-img {
   transition: fill var(--transition-duration);
   transition: fill var(--transition-func);
-}
-
-/* .modal-window-close-btn-img:hover,
-.modal-window-close-btn-img:focus {
-  fill: #ffffff;
-} */
-
-.review-form-submit-btn {
-  min-width: 118px;
-  padding: 14px;
-  font-size: 14px;
-  font-weight: 600;
-  border: none;
-  border-radius: 100px;
-  color: var(--text-color-theme-dark);
-  transition: color var(--transition-dur-and-func),
-    background-color var(--transition-dur-and-func);
-}
-
-.review-form-submit-btn:hover,
-.review-form-submit-btn:focus {
-  background-color: #404bbf;
-  color: var(--transition-dur-and-func);
 }
