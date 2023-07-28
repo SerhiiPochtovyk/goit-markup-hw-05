@@ -204,10 +204,11 @@ body {
   color: var(--primary-color);
 }
 
-.nav-items {
+.nav-item {
   display: flex;
   align-items: center;
-  transition: var(--transition-dur-and-func);
+  transition: color var(--transition-duration);
+  transition: color var(--transition-func);
 }
 
 .nav-link {
@@ -474,7 +475,8 @@ body {
   height: 100%;
   border-radius: 50%;
   background-color: #4d5ae5;
-  transition: background-color var(--transition-dur-and-func);
+  transition: background-color var(--transition-duration);
+  transition: background-color var(--transition-func);
 }
 
 .social-link:hover,
@@ -533,7 +535,8 @@ body {
   border: 1px solid #8e8f99;
   border-radius: 4px;
   color: #8e8f99;
-  border-color: var(--transition-dur-and-func);
+  border-color: var(--transition-duration);
+  border-color: var(--transition-func);
 }
 
 .icon-svg-customer:hover,
@@ -643,7 +646,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color var(--transition-dur-and-func);
+  transition: background-color var(--transition-duration);
+  transition: background-color var(--transition-func);
 }
 
 .footer-social-link:focus,
@@ -866,9 +870,11 @@ body {
   background: var(--dairy, #fcfcfc);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-  transition: opacity var(--transition-duration), var(--transition-func);
-  transition: visibility var(--transition-duration), var(--transition-func);
-  transition: transform var(--transition-duration), var(--transition-func);
+  transition: opacity var(--transition-duration); 
+  transition: opacity var(--transition-func);
+  transition: visibility var(--transition-duration);
+  transition: visibility var(--transition-func);
+  
 }
 
 .modal-window:hover,
