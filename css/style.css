@@ -35,7 +35,6 @@ img {
 button {
   cursor: pointer;
   border: none;
-  
 }
 
 figure {
@@ -150,7 +149,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: color var(--transition-dur-and-func);
 }
 
 .page-nav {
@@ -176,7 +174,8 @@ body {
 
 .address-item {
   margin-right: 40px;
-  transition: var(--transition-dur-and-func);
+  transition: color var(--transition-duration);
+  transition: color var(--transition-func);
 }
 
 .address-item:last-child {
@@ -216,19 +215,18 @@ body {
   position: relative;
   padding-top: 24px;
   padding-bottom: 24px;
-  color: #2E2F42;
+  color: #2e2f42;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
-transition-property: color  ;
-transition-duration: var(--transition-duration);
-transition-timing-function: var(--transition-func);
-  
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-func);
 }
 
 .active {
   position: relative;
-  color: #404BBF;
+  color: #404bbf;
 }
 
 .active::after {
@@ -249,7 +247,8 @@ transition-timing-function: var(--transition-func);
   padding-top: 24px;
   padding-bottom: 24px;
   color: var(--text-color);
-  transition: color var(--transition-dur-and-func);
+  transition: color var(--transition-duration);
+  transition: color var(--transition-func);
 }
 
 .nav-link:hover {
@@ -260,7 +259,8 @@ transition-timing-function: var(--transition-func);
   color: var(--hover-color);
 }
 .address {
-  transition: color var(--transition-dur-and-func);
+  transition: color var(--transition-duration);
+  transition: color var(--transition-func);
 }
 
 .nav-link:hover,
@@ -314,18 +314,17 @@ transition-timing-function: var(--transition-func);
   line-height: 1.5;
   letter-spacing: 0.04em;
   border-radius: 4px;
-  background-color: #4D5AE5;
-  color: #FFFFFF;
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-   transition-duration: var(--transition-duration);
- transition-property: background-color ;
- transition-timing-function: var(--transition-func);
+  background-color: #4d5ae5;
+  color: #ffffff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition-duration: var(--transition-duration);
+  transition-property: background-color;
+  transition-timing-function: var(--transition-func);
 }
 
 .modal-button-image:hover,
 .modal-button-image:focus {
   background-color: var(--hover-color);
-  
 }
 
 .headline {
@@ -446,7 +445,6 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   margin-top: 8px;
   height: 40px;
   margin-bottom: 32px;
-  transition: background-color var(--transition-dur-and-func);
 }
 
 .social-item {
@@ -460,7 +458,8 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   background-color: #4d5ae5;
   border-radius: 50%;
   background-size: 16px 16px;
-  transition: background-color var(--transition-dur-and-func);
+  transition: background-color var(--transition-duration);
+  transition: background-color var(--transition-func);
 }
 
 .social-icon {
@@ -521,7 +520,8 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   width: calc((100% - 120px) / 6);
   height: 88px;
   background-color: #f4f4fd;
-  transition:  border-color var(--transition-dur-and-func);
+  transition: border-color var(--transition-duration);
+  transition: border-color var(--transition-func);
 }
 
 .icon-svg-customer {
@@ -582,7 +582,8 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .logo-footer {
-  transition: background-color var(--transition-dur-and-func);
+  transition: background-color var(--transition-duration);
+  transition: background-color var(--transition-func);
 }
 
 .footer .logo-span-footer {
@@ -664,7 +665,8 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
 .block-a {
   display: block;
-  transition: box-shadow var(--transition-dur-and-func);
+  transition: box-shadow var(--transition-duration);
+  transition: box-shadow var(--transition-func);
 }
 
 .block-a:hover,
@@ -716,7 +718,12 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding-left: 24px;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
-  transition: box-shadow var(--transition-dur-and-func);
+  transition: color var(--transition-duration);
+  transition: color var(--transition-func);
+  background-color: var(--transition-duration);
+  background-color: var(--transition-func);
+  box-shadow: var(--transition-duration);
+  box-shadow: var(--transition-func);
 }
 
 .portfolio-button:hover,
@@ -766,11 +773,14 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .portfolio-subtitle {
+  padding: 40px 32px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-weight: 400;
   color: var(--text-color);
+  transition: transform var(--transition-duration);
+  transition: transform var(--transition-func);
 }
 
 /*footer  */
@@ -836,7 +846,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   height: 100%;
   background: var(--navyblue-modal, rgba(46, 47, 66, 0.4));
   transition: opacity var(--transition-dur-and-func),
-  visibility var(--transition-dur-and-func);
+    visibility var(--transition-dur-and-func);
 }
 
 .is-hidden {
@@ -856,9 +866,9 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   background: var(--dairy, #fcfcfc);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-  transition: transform var(--transition-dur-and-func);
-  transition: opacity var(--transition-dur-and-func),
-  visibility var(--transition-dur-and-func);
+  transition: opacity var(--transition-duration), var(--transition-func);
+  transition: visibility var(--transition-duration), var(--transition-func);
+  transition: transform var(--transition-duration), var(--transition-func);
 }
 
 .modal-window:hover,
@@ -889,15 +899,16 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .modal-window-close-btn-img {
-  fill: var(--cornflower, #E7E9FC);
-  transition: fill var(--transition-dur-and-func);
-}
-.modal-window-close-btn-img:hover,
-.modal-window-close-btn-img:focus {
-  fill: #ffffff;
+  transition: fill var(--transition-duration);
+  transition: fill var(--transition-func);
 }
 
- .review-form-submit-btn {
+/* .modal-window-close-btn-img:hover,
+.modal-window-close-btn-img:focus {
+  fill: #ffffff;
+} */
+
+.review-form-submit-btn {
   min-width: 118px;
   padding: 14px;
   font-size: 14px;
@@ -905,7 +916,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 100px;
   color: var(--text-color-theme-dark);
-   transition: color var(--transition-dur-and-func),
+  transition: color var(--transition-dur-and-func),
     background-color var(--transition-dur-and-func);
 }
 
@@ -913,5 +924,4 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 .review-form-submit-btn:focus {
   background-color: #404bbf;
   color: var(--transition-dur-and-func);
-} 
-
+}
