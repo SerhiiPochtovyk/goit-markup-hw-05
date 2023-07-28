@@ -147,6 +147,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: color var(--transition-dur-and-func);
 }
 
 .page-nav {
@@ -172,6 +173,7 @@ body {
 
 .address-item {
   margin-right: 40px;
+  transition: var(--transition-dur-and-func);
 }
 
 .address-item:last-child {
@@ -203,6 +205,7 @@ body {
 .nav-items {
   display: flex;
   align-items: center;
+  transition: var(--transition-dur-and-func);
 }
 
 .nav-link {
@@ -303,7 +306,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   border-radius: 4px;
-  color: var(--white-color);
+  color: #4D5AE5;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   transition: background-color var(--transition-dur-and-func);
 }
