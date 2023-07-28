@@ -642,21 +642,18 @@ body {
   color: var(--white, #ffffff);
 }
 
-.footer-social-link {
+.footer-link {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #4d5ae5;
   transition: background-color var(--transition-duration);
   transition: background-color var(--transition-func);
 }
 
-.footer-social-link:focus,
-.footer-social-link:hover {
+.footer-link:hover,
+.footer-link:focus {
   background-color: #31d0aa;
-}
-
-.social-icon {
-  transition: background-color var(--transition-dur-and-func);
 }
 
 /* ===============portfolio================== */
@@ -795,10 +792,6 @@ body {
   padding-top: 120px;
 }
 
-.footer-portfolio {
-  background-color: #2e2f42;
-}
-
 .footer-social-media {
   display: flex;
   justify-content: flex-start;
@@ -832,7 +825,8 @@ body {
 
 .footer-link {
   background-color: #4d5ae5;
-  transition: background-color var(--transition-dur-and-func);
+  transition: background-color var(--transition-duration);
+  transition: background-color var(--transition-func);
 }
 
 .footer-link:hover,
