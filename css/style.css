@@ -627,7 +627,7 @@ body {
   color: var(--white, #ffffff);
 }
 
-.footer-link {
+/* .footer-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -637,14 +637,8 @@ body {
 
 .footer-link:hover,
 .footer-link:focus {
-  background-color: #31d0aa;
-  } 
-
-.footer-link {
-  transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
+ background-color: #31d0aa;
+   }  */
 
 /* ===============portfolio================== */
 
@@ -818,17 +812,6 @@ body {
   letter-spacing: 0.02em;
   margin-bottom: 16px;
   color: var(--white, #ffffff);
-}
-
-.footer-link {
-  background-color: #4d5ae5;
-  transition: background-color var(--transition-duration);
-  transition: background-color var(--transition-func);
-}
-
-.footer-link:hover,
-.footer-link:focus {
-  background-color: #31d0aa;
 }
 
 /* ================ REVIEWS ================ */
